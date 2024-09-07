@@ -47,7 +47,7 @@ export const Intro = () => {
               type: "spring",
               stiffness: 125,
               delay: 0.1,
-              duration: 0.7,
+              duration: 0.7
             }}  
           >
             👋
