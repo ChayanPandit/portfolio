@@ -5,6 +5,10 @@ const nextConfig = {
       { 
         hostname: 'plus.unsplash.com', 
         protocol: 'https' 
+      },
+      { 
+        hostname: 'upoad.wikimedia.org', 
+        protocol: 'https' 
       } 
     ]
   },

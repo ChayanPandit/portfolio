@@ -9,6 +9,7 @@ import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/ActiveSectionContext';
+import profile_pic from "@/public/profile_pic.png";
 
 export const Intro = () => {
 
@@ -31,12 +32,12 @@ export const Intro = () => {
               duration: 0.2,
             }}
           >
-          <Image src="https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chayan portrait" 
+          <Image src={profile_pic} alt="Chayan portrait" 
             width={192}
             height={192}
             quality= {95}
             priority={true}
-            className='h-24 w-24 rounded-full object-cover border-2 border-white shadow-xl'
+            className='h-36 w-36 rounded-full object-cover border-2 border-white shadow-xl'
             />
           </motion.div>
           <motion.span 
@@ -61,8 +62,7 @@ export const Intro = () => {
         >
           <span className="font-bold">Hello, I&apos;m Chayan.</span> I&apos;m a{" "}
           <span className="font-bold">full-stack developer</span> with{" "}
-          <span className="font-bold">2 years</span> of experience. I enjoy
-          building <span className="italic">sites & apps</span>. My focus is{" "}
+          <span className="font-bold">2 years</span> of experience. Currently my focus is on {" "}
           <span className="underline">React (Next.js)</span>.
         </motion.h1>
 
@@ -95,14 +95,14 @@ export const Intro = () => {
           </a>
           <a
             className="bg-white p-4 text-xl text-slate-700 hover:text-slate-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/chayan-pandit-ab71ba224/"
             target="_blank" rel="noreferrer"
           >
             <BsLinkedin />
           </a>
           <a
             className="bg-white p-4 text-slate-700 flex items-center gap-2 text-2xl rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://github.com"
+            href="https://github.com/ChayanPandit"
             target="_blank" rel="noreferrer"
           >
             <FaGithubSquare />
