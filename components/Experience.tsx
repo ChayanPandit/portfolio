@@ -19,7 +19,7 @@ export default function Experience() {
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 text-center">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="" layout="2-columns">
-        {experiencesData.map((item, index) => (
+        {experiencesData.map((item) => (
           <React.Fragment key={item?.title}>
             <VerticalTimelineElement
               visible={true}
